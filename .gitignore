@@ -1,0 +1,51 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Scratch / debug screenshots captured at runtime ──────────────────────────
+*.png
+*.jpg
+*.jpeg
+# (templates/ is intentionally NOT ignored — those are part of the bot)
+!templates/**
+
+# ── Android / Gradle ─────────────────────────────────────────────────────────
+EatBot-Android/.gradle/
+EatBot-Android/build/
+EatBot-Android/app/build/
+EatBot-Android/local.properties
+EatBot-Android/*.iml
+EatBot-Android/file-system.probe
+
+# ── Large binary / media ──────────────────────────────────────────────────────
+*.mp4
+*.avi
+*.mov
+
+# ── OS / editor artefacts ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/settings.json
+*.iml
+
+# ── Env / secrets ────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example

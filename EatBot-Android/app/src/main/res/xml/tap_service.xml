@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Accessibility service config for EatVenture Bot TapService.
+    - typeAllMask: catch all events so we can track user touches and package changes.
+    - canPerformGestures: required for automated tap / swipe injection.
+    - Package filtering is intentionally removed so window-state events from
+      Android notifications, overlays, and other apps can stop injected gestures.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault|flagReportViewIds|flagRetrieveInteractiveWindows"
+    android:canPerformGestures="true"
+    android:canRequestFilterKeyEvents="false"
+    android:description="@string/a11y_desc"
+    android:notificationTimeout="50" />
